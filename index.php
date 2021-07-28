@@ -5,52 +5,98 @@
             'title' => 'New Jersey',
             'author' => 'Bon Jovi',
             'year' => 1988,
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
+        ],
+        [
+            'title' => 'Famoso',
+            'author' => 'Sfera Ebbasta',
+            'year' => 2019,
+            'poster' => "https://images-na.ssl-images-amazon.com/images/I/91Bjp2F0aGL._AC_SL1500_.jpg",
         ],
         [
             'title' => 'New Jersey',
             'author' => 'Bon Jovi',
             'year' => 1988,
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
         ],
         [
             'title' => 'New Jersey',
             'author' => 'Bon Jovi',
             'year' => 1988,
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
         ],
         [
             'title' => 'New Jersey',
             'author' => 'Bon Jovi',
             'year' => 1988,
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
         ],
         [
             'title' => 'New Jersey',
             'author' => 'Bon Jovi',
             'year' => 1988,
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
         ],
         [
             'title' => 'New Jersey',
             'author' => 'Bon Jovi',
             'year' => 1988,
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
         ],
         [
             'title' => 'New Jersey',
             'author' => 'Bon Jovi',
             'year' => 1988,
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
         ],
         [
             'title' => 'New Jersey',
             'author' => 'Bon Jovi',
             'year' => 1988,
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
         ],
         [
             'title' => 'New Jersey',
             'author' => 'Bon Jovi',
             'year' => 1988,
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
         ],
         [
             'title' => 'New Jersey',
             'author' => 'Bon Jovi',
             'year' => 1988,
-        ]  
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
+        ],
+        [
+            'title' => 'New Jersey',
+            'author' => 'Bon Jovi',
+            'year' => 1988,
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
+        ],  
+        [
+            'title' => 'New Jersey',
+            'author' => 'Bon Jovi',
+            'year' => 1988,
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
+        ],  
+        [
+            'title' => 'New Jersey',
+            'author' => 'Bon Jovi',
+            'year' => 1988,
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
+        ],  
+        [
+            'title' => 'New Jersey',
+            'author' => 'Bon Jovi',
+            'year' => 1988,
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
+        ],  
+        [
+            'title' => 'New Jersey',
+            'author' => 'Bon Jovi',
+            'year' => 1988,
+            'poster' => "https://i2.wp.com/www.vinylpussycat.com/wp-content/uploads/DSC_0010-12.jpg?fit=765%2C775&ssl=1",
+        ],       
     ]
 ?>
 
@@ -72,9 +118,13 @@
 
     <main>
         <ul>
+            <?php foreach($dischi as $disco){  
+            ?>
             <li>
-                
+                <?php echo $disco['title'].'<br>'.$disco['author'].'<br>'.$disco['year'] ?>
+                <img src="<?php $disco['poster'] ?>" alt="">
             </li>
+            <?php } ?>
         </ul>
     </main>
 

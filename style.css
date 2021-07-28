@@ -13,12 +13,15 @@ main {
     background-color: rgb(26, 26, 26);
     height: calc(100vh - 60px);
     overflow-y: scroll;
-    padding: 100px;
+    padding: 150px;
     text-align: center;
 }
 
 ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 li {
@@ -26,7 +29,26 @@ li {
     border-radius: 50%;
     height: 300px;
     width: 300px;
-    display: inline-block;
     margin-right: 50px;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    font-size: 40px;
+    position: relative;
+}
+
+li img {
+    height: 300px;
+    border-radius: 50%;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+li:hover img{
+    display: inline-block;
+    cursor: pointer;
 }
