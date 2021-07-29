@@ -1,5 +1,4 @@
 <?php
-
     $dischi = [
         [
             'title' => 'New Jersey',
@@ -97,36 +96,4 @@
             'year' => 2016,
             'poster' => "https://img.discogs.com/_t6TBNXIs-x6awAohhYCqXtfXFc=/fit-in/357x356/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3138600-1319139541.jpeg.jpg",
         ],       
-    ]
-?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dischi</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header>
-        
-    </header>
-
-    <main>
-        <ul>
-            <?php foreach($dischi as $disco){  
-            ?>
-            <li>
-                <?php echo $disco['title'].'<br>'.$disco['author'].'<br>'.$disco['year'] ?>
-                <img src="<?php echo $disco['poster'] ?>" alt="">
-            </li>
-            <?php } ?>
-        </ul>
-    </main>
-
-</body>
-</html>
+    ];
